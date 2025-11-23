@@ -1,0 +1,1 @@
+Mahadev Fabric Care - Starter React project\n\nThis is a minimal Vite + React starter exported by the assistant. To run: npm install && npm run dev\nLocalStorage is used to mock account features for prototyping.

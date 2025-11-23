@@ -1,0 +1,1 @@
+/* App.jsx written by assistant — minimal starter exported */\nimport React from 'react';\nexport default function App(){ return React.createElement('div', null, 'Mahadev Fabric Care - open the project to see the full UI'); }\n
