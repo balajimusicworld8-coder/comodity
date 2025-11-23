@@ -1,1 +1,47 @@
-body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }\n#root { min-height: 100vh; }\n
+:root {
+  --brand-yellow: #F7E94B;
+  --brand-yellow-2: #FFF8E1;
+  --brand-yellow-dark: #F2D94A;
+  --brand-black: #000000;
+}
+
+/* Basic reset & font */
+* { box-sizing: border-box; }
+html,body,#root { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--brand-yellow);
+  color: var(--brand-black);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Layout */
+nav { padding: 16px; display:flex; justify-content:space-between; align-items:center; gap:12px; background:var(--brand-yellow-2); box-shadow: 0 3px 8px rgba(0,0,0,0.08); }
+nav a { color: var(--brand-black); text-decoration: none; font-weight: 600; }
+main { padding: 24px; max-width: 1100px; margin: 0 auto; }
+
+/* Buttons / cards */
+.btn { padding: 10px 14px; border-radius: 10px; text-decoration: none; display:inline-block; font-weight:600; }
+.btn-yellow { background: #FFD54A; color: #000; }
+.btn-green { background: #25D366; color: #fff; }
+
+/* Cards */
+.card { background: var(--brand-yellow-2); padding: 18px; border-radius: 14px; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+
+/* Footer */
+footer { margin-top: 40px; background: var(--brand-yellow-dark); padding: 20px; }
+
+/* Responsive grid */
+.grid { display: grid; gap: 12px; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 820px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* Small helpers */
+.muted { color: rgba(0,0,0,0.6); }
+.large { font-size: 1.7rem; font-weight:700; margin:0; }
+
